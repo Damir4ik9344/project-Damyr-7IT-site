@@ -11,7 +11,8 @@
     <title>Назва вашої сторінки</title>
 
     <!-- Підключення зовнішніх стилів -->
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -46,32 +47,33 @@
                     <!-- 6.1 Стовірть посилання на на почту. (href="mailto:example@gmail.com"). В тегу напишіть Contact Us -->
 
                     <header class="header">
-                        <div class="header-container">
-                            <img src="images/header__logo.png" alt="60">
+                        <div class="header-container container">
+                            <img src="./images/header__logo.svg" alt="logo" class="header-logo" />
+                
                             <nav class="header-nav">
-                            <ul class="header-list">
-                                <li class="header-item">
-                                    <a href=""class="header-link">Home</a>
-                                </li>
-                                <li class="header-item">
-                                    <a href=""class="header-link">About us</a>
-                                </li>
-                                <li class="header-item">
-                                    <a href="" class="header-link">Service</a></li>
-                                <li class="header-item">
-                                    <a href=""class="header-link">Pricing</a>
-                                </li>
-                                <li class="header-item">
-                                    <a href=""class="header-link">Blog</a>
-                                </li>
+                                <ul class="header-list">
+                                    <li class="header-item">
+                                        <a href="#" class="header-link">Home</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="#" class="header-link">About Us</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="#" class="header-link">Service</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="#" class="header-link">Pricing</a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="#" class="header-link">Blog</a>
+                                    </li>
                                 </ul>
-                                <button  type="button " class="header-button">
-                                    <a href="ahahhah@gmail.com">Contact us</a>
+                
+                                <button class="button header-button">
+                                    <a href="mailto:example@gmail.com">Contact Us</a>
                                 </button>
                             </nav>
-
                         </div>
-
                     </header>
                      <!-- 1. Основна частина сторінки починається тут. Задайте клас main -->
 
@@ -100,23 +102,35 @@
  
                 <!-- 6. Створіть основне зображення, яке показує людину. (start__dude.png). Задайте клас start-img  -->
                  <main class="main">
-                    <section class="start" class="container">
+
+                    <section class="start container">
                         <div class="solution-container">
-                            <h1 class="start-title">
+                            <div class="start-inner">
+                                <h1 class="start-title">Virtual Reality<br />Business Solutions</h1>
+            
                                 <p class="start-article">
-                                    We have over 15 year exprience in business consultting arena. We have
-                                    over 15 year exprience in business consultting arena and artficial intelligence.
+                                    We have over 15 year exprience in business consultting arena. We
+                                    have over<br />15 year exprience in business consultting arena and
+                                    artficial intelligence.
                                 </p>
-                            </h1>
-                            <button class="button" class="tart-button"><a href="" class="">Join us</a></button>
-                            <button class="start-button-video">
-                                <img src="images/start__button-video.svg" alt=""> Watch video
-                                </button>
-                            <img src="images/start__dude.png" alt="">
+            
+                                <div class="start-buttons">
+                                    <button class="button start-button">
+                                        <a href="#">Join Us</a>
+                                    </button>
+            
+                                    <button class="start-button-video">
+                                        <img src="./images/start__button-video.svg" alt="icon" />
+                                        <span>Watch video</span>
+                                    </button>
+                                </div>
                             </div>
+            
+                            <img src="./images/start__dude.png" alt="" class="start-img" />
+                        </div>
+                    </section>
                         
 
-                 </main>
 
 
 
@@ -150,40 +164,71 @@
                 <!-- Тут закінчується контейнер  -->
 
                 <!-- Повторіть ще два рази створення контейнеру для Елемента Послуги. -->
-                 <section class="information">
+                <section class="service">
                     <div class="container">
-                        <h1 class="service-title">
-                            Наші послуги
-                        </h1>
+                        <h1 class="service-title">Our Service</h1>
+        
                         <div class="service-text">
                             <p class="service-article">
-                                Ми перетворюємо інформацію в практичні інсайти. Ми працюємо, щоб розуміти ваші проблеми
-                                і маємо мету ставити кращі питання в прагненні досягнення результатів у роботі.
-
+                                We turn information into actionable insights We work to understand
+                                your issues<br />and are driven to ask better questions in the
+                                pursuit of making work.
                             </p>
-                            <div class="service-item">
-
-                                <div class="service-item">
-                                    <img src="" alt="" class="service-item-icon">
-                                    <h1 class="service-item-title">
-                                        Управління Замовленнями
-                                    </h1>
-                                    <p class="service-item-article">
-
-                                    </p>
-                                    <a href="" class="service-item-link"><img src="images/service__icon-1.svg" alt="">Дізнатися більше</a>
-
-                                </div>
-
-
-                            </div>
-
                         </div>
-
-
+        
+                        <div class="service-items">
+                            <div class="service-item">
+                                <img src="./images/service__icon-1.svg" alt="icon-1" class="service-item-icon" />
+        
+                                <h3 class="service-item-title">Order Management</h3>
+        
+                                <p class="service-item-article">
+                                    Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                                    quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+                                </p>
+        
+                                <a href="#" class="service-item-link d-flex">
+                                    <span>Learn more</span>
+                                    <img src="./images/service__item-arrow.svg" alt="arrow" />
+                                </a>
+                            </div>
+        
+                            <div class="service-item">
+                                <img src="./images/service__icon-1.svg" alt="icon-1" class="service-item-icon" />
+        
+                                <h3 class="service-item-title">Order Management</h3>
+        
+                                <p class="service-item-article">
+                                    Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                                    quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+                                </p>
+        
+                                <a href="#" class="service-item-link d-flex">
+                                    <span>Learn more</span>
+                                    <img src="./images/service__item-arrow.svg" alt="arrow" />
+                                </a>
+                            </div>
+        
+                            <div class="service-item">
+                                <img src="./images/service__icon-1.svg" alt="icon-1" class="service-item-icon" />
+        
+                                <h3 class="service-item-title">Order Management</h3>
+        
+                                <p class="service-item-article">
+                                    Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                                    quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+                                </p>
+        
+                                <a href="#" class="service-item-link">
+                                    <span>Learn more</span>
+                                    <img src="./images/service__item-arrow.svg" alt="arrow" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                 </section>
+                </section>
+                
+                </main>
 
 
 
